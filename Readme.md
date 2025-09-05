@@ -93,15 +93,15 @@ it means
 Complete examples: 
 ````javascript
 	// Strict equality (===)
-	console.log(5 === 5);      // true (same value and same type - number)
+	console.log(5 === 5); // true (same value and same type - number)
 	console.log("hello" === "hello"); // true (same value and same type - string)
-	console.log(5 === "5");    // false (different types - number vs string)
-	console.log(true === 1);   // false (different types - boolean vs number)
+	console.log(5 === "5"); // false (different types - number vs string)
+	console.log(true === 1); // false (different types - boolean vs number)
 	console.log(null === undefined); // false (different types - null vs undefined)
 	
 	// Loose equality (==) for comparison
-	console.log(5 == "5");     // true (type coercion occurs, "5" becomes a number)
-	console.log(true == 1);    // true (type coercion occurs, 1 becomes true)
+	console.log(5 == "5"); // true (type coercion occurs, "5" becomes a number)
+	console.log(true == 1); // true (type coercion occurs, 1 becomes true)
 	console.log(null == undefined); // true (special case for loose equality)
 ````
 ## 3. Data Type in Javascript
@@ -749,61 +749,69 @@ Examples:
 ````
 #### 8.5.2. Common Event Types (using with addEventListener)
 **Mouse Events / Pointer Events**
-*`click` → when clicked 
-*`dblclick`→ double-click
-*`mouseover` → when mouse enters
-*`mouseout` → when mouse leaves
-*`mousemove` → when mouse moves
-`contextmenu` → when right-click happens (can make your own right-click menu).
-`wheel` → when you scroll with the mouse wheel.
-`mouseenter` → like mouseover, but doesn’t bubble.
-`mouseleave` → like mouseout, but doesn’t bubble.
-`pointerdown` / `pointerup` → works for mouse, pen, and touch.
-`pointermove` → track finger or pen movements.
+- *`click` → when clicked 
+- *`dblclick`→ double-click
+- *`mouseover` → when mouse enters
+- *`mouseout` → when mouse leaves
+- *`mousemove` → when mouse moves
+- `contextmenu` → when right-click happens (can make - your own right-click menu).
+- `wheel` → when you scroll with the mouse wheel.
+- `mouseenter` → like mouseover, but doesn’t bubble.
+- `mouseleave` → like mouseout, but doesn’t bubble.
+- `pointerdown` / `pointerup` → works for mouse, - pen, and touch.
+- `pointermove` → track finger or pen movements.
 
-(used on phones/tablets)
-`touchstart` → finger touches screen.
-`touchend`→ finger lifted.
-`touchmove` → finger moves around.
-`touchcancel` → touch interrupted (e.g., phone call).
+**(used on phones/tablets)**
+- `touchstart` → finger touches screen.
+- `touchend`→ finger lifted.
+- `touchmove` → finger moves around.
+- `touchcancel` → touch interrupted (e.g., phone call).
+  
 **Keyboard Events**
-*`keydown` → key is pressed
-*`keyup` → key is released
-`compositionstart`, `compositionend` → when typing complex input (like Chinese/Japanese IME).
-`beforeinput` → fires before input actually changes (can block it).
+- *`keydown` → key is pressed
+- *`keyup` → key is released
+- `compositionstart`, `compositionend` → when typing complex input (like Chinese/Japanese IME).
+- `beforeinput` → fires before input actually - changes (can block it).
+  
 **Form Events**
-*`submit` → form is submitted
-*`change` → input value changes (e.g., checkbox toggled)
-*`input` → value changes while typing
-*`focus` → input gets cursor
-*`blur` → input loses cursor
-`reset` → when a form is reset.
-`invalid` → when form validation fails.
-`select` → when text is selected inside an`<input>` or `<textarea>`.
+- *`submit` → form is submitted
+- *`change` → input value changes (e.g., checkbox toggled)
+- *`input` → value changes while typing
+- *`focus` → input gets cursor
+- *`blur` → input loses cursor
+- `reset` → when a form is reset.
+- `invalid` → when form validation fails.
+- `select` → when text is selected inside an`<input>` or `<textarea>`.
+
 **Window/Document Events**
-*`load` → page loaded
-*`resize` → window resized
-*`scroll` → page scrolled
-`DOMContentLoaded` → fires when HTML is loaded before images/css (faster than load).
-`beforeunload` → fires before leaving page (used for “Are you sure you want to leave?”).
-`visibilitychange` → when the page is hidden (user changes tab).
+- *`load` → page loaded
+- *`resize` → window resized
+- *`scroll` → page scrolled
+- `DOMContentLoaded` → fires when HTML is loaded before images/css (faster than load).
+- `beforeunload` → fires before leaving page (used for “Are you sure you want to leave?”).
+- `visibilitychange` → when the page is hidden (user changes tab).
+
 **Media Events (audio/video)**
-`play` → video/audio starts playing.
-`pause` → video/audio paused.
-`ended` → playback finished.
-`volumechange` → volume changed.
-`timeupdate` → current play time updated.
+- `play` → video/audio starts playing.
+- `pause` → video/audio paused.
+- `ended` → playback finished.
+- `volumechange` → volume changed.
+- `timeupdate` → current play time updated.
+
 **Drag & Drop Events**
-`dragstart` → when drag begins.
-`dragover` → while dragging over a target.
-`drop` → when dropped.
-`dragend` → when dragging ends.
+- `dragstart` → when drag begins.
+- `dragover` → while dragging over a target.
+- `drop` → when dropped.
+- `dragend` → when dragging ends.
+
 **Special UI Events**
-`animationstart`, `animationend`, `animationiteration` → CSS animation lifecycle.
-`transitionend` → CSS transition finished.
-`fullscreenchange` → when entering or exiting fullscreen.
-`copy`, `cut`, `paste` → clipboard events.
+- `animationstart`, `animationend`, - `animationiteration` → CSS animation lifecycle.
+- `transitionend` → CSS transition finished.
+- `fullscreenchange` → when entering or exiting fullscreen.
+- `copy`, `cut`, `paste` → clipboard events.
+  
 (NOTE: `*` is solid foundation)
+
 ### 8.6. DOM Navigation 
 
 ### 8.7. DOM Nodes

@@ -30,7 +30,9 @@
 	- [4. Loop](#4-loop)
 	- [5. JS Time](#5-js-time)
 		- [5.1. Date, Timestamp, ISO 8601](#51-date-timestamp-iso-8601)
-		- [5.2. Date methods](#52-date-methods)
+		- [5.2. Basic Date methods](#52-basic-date-methods)
+		- [5.3. getTime(), getTimezoneOffset()](#53-gettime-gettimezoneoffset)
+		- [5.4. Convert Date object to string](#54-convert-date-object-to-string)
 	- [8. DOM](#8-dom)
 		- [8.1. DOM Document](#81-dom-document)
 			- [8.1.1. Accessing elements:](#811-accessing-elements)
@@ -577,7 +579,7 @@ Format: `key - value`
 	console.log(date); // Invalid Date
 ```
 
-### 5.2. Date methods 
+### 5.2. Basic Date methods 
 ```javascript
 	// it is not necessary to remember all Date methods
 	// you just comprehend the concepts of time: FullYear, Month, Date, Day, Hours, Minutes, Seconds, Milliseconds. 
@@ -613,6 +615,28 @@ Format: `key - value`
 	console.log(${date.getDate()}:${date.getMonth()}:${date.getFullYear()}); 
 
 ```
+### 5.3. getTime(), getTimezoneOffset()
+```javascript
+	// Usage: getTime() will return timestamp (ms)
+	// Use to compare two moments of time, or use to store data into Database.
+	// example: Ask user to enter the time to start and end of an event. 
+	const dateStart = new Date("2024-05-09"); 
+	const dateEnd = new Date("2024-04-09"); 
+	
+	if (dateEnd > dateStart) {
+		console.log("Fetch data successfully!"); 
+	} else {
+		console.log("The ended time must happen after the started time"); 
+	}
+
+	// Usage: getTimezoneOffset() return the difference between the standard time zone
+```
+### 5.4. Convert Date object to string
+```javascript
+	console.log(new Date().toISOString); // convert date to ISO 8601 string
+	console.log(new Date.toLocaleString(locales, options); // convert date to string according to region and options format
+```
+**Reference**: <a href="https://www.w3schools.com/jsref/jsref_tolocalestring.asp">Locales and options</a>
 
 ## 8. DOM
 - Is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document

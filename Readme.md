@@ -6,7 +6,7 @@
 - [Javascript date](js/js-date.md)
 - [Advanced topics](js/advanced.md)
 - [DOM](js/DOM.md)
-
+- [TS quick start](ts/ts-quick-start.md)
 
 
 

@@ -1,60 +1,64 @@
-# JS cheat sheet 
+i# JS cheat sheet 
 
-- [JS cheat sheet](#js-cheat-sheet)
-	- [1. Hoisting](#1-hoisting)
-	- [2. Strict equality and loose equality operator](#2-strict-equality-and-loose-equality-operator)
-	- [3. Data Type in Javascript](#3-data-type-in-javascript)
-		- [3.1. String](#31-string)
-		- [3.2. Number](#32-number)
-		- [3.3. BigInt](#33-bigint)
-		- [3.4. Boolean](#34-boolean)
-		- [3.5. Undefined](#35-undefined)
-		- [3.6. Null (Empty)](#36-null-empty)
-		- [3.7. Symbol (Unique value)](#37-symbol-unique-value)
-		- [3.8. Object](#38-object)
-			- [3.8.1. Add, modify, delete new key-value](#381-add-modify-delete-new-key-value)
-			- [3.8.2. Traverse Object](#382-traverse-object)
-			- [3.8.3. Check property](#383-check-property)
-			- [3.8.4. Clone and merge object](#384-clone-and-merge-object)
-			- [3.8.5. Destructuring](#385-destructuring)
-			- [3.8.6. Method in object](#386-method-in-object)
-			- [3.8.7. Object vs Map vs Set](#387-object-vs-map-vs-set)
-		- [3.9. Array](#39-array)
-			- [3.9.1. Add / Remove elements](#391-add--remove-elements)
-			- [3.9.2. Traverse](#392-traverse)
-			- [3.9.3. Search](#393-search)
-			- [3.9.4. Array transformation](#394-array-transformation)
-			- [3.9.5. Sort and reverse](#395-sort-and-reverse)
-			- [3.9.6. Other methods](#396-other-methods)
-		- [3.10. Function](#310-function)
-	- [4. Loop](#4-loop)
-	- [5. JS Time](#5-js-time)
-		- [5.1. Date, Timestamp, ISO 8601](#51-date-timestamp-iso-8601)
-		- [5.2. Basic Date methods](#52-basic-date-methods)
-		- [5.3. getTime(), getTimezoneOffset()](#53-gettime-gettimezoneoffset)
-		- [5.4. Convert Date object to string](#54-convert-date-object-to-string)
-	- [8. DOM](#8-dom)
-		- [8.1. DOM Document](#81-dom-document)
-			- [8.1.1. Accessing elements:](#811-accessing-elements)
-			- [8.1.2.Changing content:](#812changing-content)
-			- [8.1.3. Changing attributes:](#813-changing-attributes)
-			- [8.1.4. Change styles:](#814-change-styles)
-			- [8.1.5. Adding and deleting elements:](#815-adding-and-deleting-elements)
-			- [8.1.6. Adding event handlers:](#816-adding-event-handlers)
-			- [8.1.7. Useful `document` properties:](#817-useful-document-properties)
-		- [8.2. DOM Validate](#82-dom-validate)
-			- [8.2.1. Form](#821-form)
-			- [8.2.2. Numeric input](#822-numeric-input)
-		- [8.3. DOM CSS](#83-dom-css)
-		- [8.4. DOM Animation](#84-dom-animation)
-		- [8.5. DOM Event](#85-dom-event)
-			- [8.5.1. Usage](#851-usage)
-			- [8.5.2. Common Event Types (using with addEventListener)](#852-common-event-types-using-with-addeventlistener)
-		- [8.6. DOM Navigation](#86-dom-navigation)
-		- [8.7. DOM Nodes](#87-dom-nodes)
-		- [8.8. Nodes](#88-nodes)
-		- [8.9. Collections](#89-collections)
-		- [8.10. Node Lists](#810-node-lists)
+- [1. Hoisting](#1-hoisting)
+- [2. Strict equality and loose equality operator](#2-strict-equality-and-loose-equality-operator)
+- [3. Data Type in Javascript](#3-data-type-in-javascript)
+	- [3.1. String](#31-string)
+	- [3.2. Number](#32-number)
+	- [3.3. BigInt](#33-bigint)
+	- [3.4. Boolean](#34-boolean)
+	- [3.5. Undefined](#35-undefined)
+	- [3.6. Null (Empty)](#36-null-empty)
+	- [3.7. Symbol (Unique value)](#37-symbol-unique-value)
+	- [3.8. Object](#38-object)
+		- [3.8.1. Add, modify, delete new key-value](#381-add-modify-delete-new-key-value)
+		- [3.8.2. Traverse Object](#382-traverse-object)
+		- [3.8.3. Check property](#383-check-property)
+		- [3.8.4. Clone and merge object](#384-clone-and-merge-object)
+		- [3.8.5. Destructuring](#385-destructuring)
+		- [3.8.6. Method in object](#386-method-in-object)
+		- [3.8.7. Object vs Map vs Set](#387-object-vs-map-vs-set)
+	- [3.9. Array](#39-array)
+		- [3.9.1. Add / Remove elements](#391-add--remove-elements)
+		- [3.9.2. Traverse](#392-traverse)
+		- [3.9.3. Search](#393-search)
+		- [3.9.4. Array transformation](#394-array-transformation)
+		- [3.9.5. Sort and reverse](#395-sort-and-reverse)
+		- [3.9.6. Other methods](#396-other-methods)
+	- [3.10. Function](#310-function)
+	- [3.11. Set](#311-set)
+		- [3.11.1. Basic Set methods](#3111-basic-set-methods)
+		- [3.11.2. Set logic methods](#3112-set-logic-methods)
+	- [3.12. Map](#312-map)
+	- [3.13. Primitive and reference types](#313-primitive-and-reference-types)
+- [4. Loop](#4-loop)
+- [5. JS Time](#5-js-time)
+	- [5.1. Date, Timestamp, ISO 8601](#51-date-timestamp-iso-8601)
+	- [5.2. Basic Date methods](#52-basic-date-methods)
+	- [5.3. getTime(), getTimezoneOffset()](#53-gettime-gettimezoneoffset)
+	- [5.4. Convert Date object to string](#54-convert-date-object-to-string)
+- [8. DOM](#8-dom)
+	- [8.1. DOM Document](#81-dom-document)
+		- [8.1.1. Accessing elements:](#811-accessing-elements)
+		- [8.1.2.Changing content:](#812changing-content)
+		- [8.1.3. Changing attributes:](#813-changing-attributes)
+		- [8.1.4. Change styles:](#814-change-styles)
+		- [8.1.5. Adding and deleting elements:](#815-adding-and-deleting-elements)
+		- [8.1.6. Adding event handlers:](#816-adding-event-handlers)
+		- [8.1.7. Useful `document` properties:](#817-useful-document-properties)
+	- [8.2. DOM Validate](#82-dom-validate)
+		- [8.2.1. Form](#821-form)
+		- [8.2.2. Numeric input](#822-numeric-input)
+	- [8.3. DOM CSS](#83-dom-css)
+	- [8.4. DOM Animation](#84-dom-animation)
+	- [8.5. DOM Event](#85-dom-event)
+		- [8.5.1. Usage](#851-usage)
+		- [8.5.2. Common Event Types (using with addEventListener)](#852-common-event-types-using-with-addeventlistener)
+	- [8.6. DOM Navigation](#86-dom-navigation)
+	- [8.7. DOM Nodes](#87-dom-nodes)
+	- [8.8. Nodes](#88-nodes)
+	- [8.9. Collections](#89-collections)
+	- [8.10. Node Lists](#810-node-lists)
 
 
 ## 1. Hoisting
@@ -480,6 +484,119 @@ Format: `key - value`
 	}
 	console.log(typeof calculateTax); // function
 ```
+
+### 3.11. Set
+#### 3.11.1. Basic Set methods
+```javascript
+// Basic Set Methods
+let s = new Set();
+s.add();
+s.clear();
+s.delete();
+s.entries(); 
+s.forEach(); // invokes a callback 
+s.has(); // search element
+s.keys(); // returns an Iterator object with the values 
+s.values(); // returns an Iterator object with the values
+/* A Set has no keys, so keys() returns the same as values() */
+
+// Set Properties
+size
+```
+#### 3.11.2. Set logic methods
+
+```javascript 
+// in js 2025, 7 new logical methods were added to manipulate with two sets
+s.union();
+s.difference();
+s.intersection();
+s.isDisjointFrom();
+s.isSubsetOf();
+s.isSupersetOf();
+s.symmetricDifference();
+```
+`union`
+
+<img src="images/img_set_union_300.jpg">
+
+`intersection`
+
+<img src="images/img_set_intersection_300.jpg">
+
+`difference`
+
+<img src="images/img_set_difference_300.jpg">
+
+`symmetricDifference`
+
+<img src="images/img_set_symmetric_difference_300.jpg">
+
+`isSubsetOf`
+
+<img src="images/img_set_subset_300.jpg">
+
+`isSupersetOf`
+
+<img src="images/img_set_superset_300.jpg">
+
+`isDisjointFrom`
+
+<img src="images/img_set_disjoint_300.jpg">
+
+### 3.12. Map
+```javascript 
+	// create a map
+	const fruits = new Map([
+		["apples", 500], 
+		["banana", 300],
+		["oranges", 200]
+	]); 
+
+	// Common methods
+	m.get(); 
+	m.set(); 
+	m.delete(); 
+	m.clear(); 
+	m.has(); 
+	m.forEach(); 
+	m.entries(); 
+	m.keys(); 
+	m.values(); 
+	// properties
+	m.size; 
+
+	// Being able to use objects as keys in an important Map feature. 
+	// Create Objects
+	const apples = {name: 'Apples'};
+	const bananas = {name: 'Bananas'};
+	const oranges = {name: 'Oranges'};
+
+	// Create a Map
+	const fruits = new Map();
+
+	// Add new Elements to the Map
+	fruits.set(apples, 500);
+	fruits.set(bananas, 300);
+	fruits.set(oranges, 200);
+```
+
+### 3.13. Primitive and reference types
+
+**Primitive types:**
+- `string`, `number`, `boolean`, `null`, `undefined`, `symbol`, `bigint`. 
+- Directly store in stack.
+- When assigning -> create a unique copy. 
+```typescript 
+	let a = 10; 
+	let b = a; 
+	b = 20; 
+	console.log(a); // 10 (not influenced)
+	console.log(b); // 20 
+```
+
+**Reference types**: 
+- `object`, `array`, `function`, `Date`, `Map`, `Set`, ... 
+
 ## 4. Loop 
 ```javascript
 	// 1. traditional for loop 
@@ -487,7 +604,7 @@ Format: `key - value`
 		// code
 	}
 
-	// 2. tradition while loop 
+	// 2. traditional while loop 
 	while (condition) {
 		// code 
 	}

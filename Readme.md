@@ -1,64 +1,69 @@
-i# JS cheat sheet 
+# JS cheat sheet 
 
-- [1. Hoisting](#1-hoisting)
-- [2. Strict equality and loose equality operator](#2-strict-equality-and-loose-equality-operator)
-- [3. Data Type in Javascript](#3-data-type-in-javascript)
-	- [3.1. String](#31-string)
-	- [3.2. Number](#32-number)
-	- [3.3. BigInt](#33-bigint)
-	- [3.4. Boolean](#34-boolean)
-	- [3.5. Undefined](#35-undefined)
-	- [3.6. Null (Empty)](#36-null-empty)
-	- [3.7. Symbol (Unique value)](#37-symbol-unique-value)
-	- [3.8. Object](#38-object)
-		- [3.8.1. Add, modify, delete new key-value](#381-add-modify-delete-new-key-value)
-		- [3.8.2. Traverse Object](#382-traverse-object)
-		- [3.8.3. Check property](#383-check-property)
-		- [3.8.4. Clone and merge object](#384-clone-and-merge-object)
-		- [3.8.5. Destructuring](#385-destructuring)
-		- [3.8.6. Method in object](#386-method-in-object)
-		- [3.8.7. Object vs Map vs Set](#387-object-vs-map-vs-set)
-	- [3.9. Array](#39-array)
-		- [3.9.1. Add / Remove elements](#391-add--remove-elements)
-		- [3.9.2. Traverse](#392-traverse)
-		- [3.9.3. Search](#393-search)
-		- [3.9.4. Array transformation](#394-array-transformation)
-		- [3.9.5. Sort and reverse](#395-sort-and-reverse)
-		- [3.9.6. Other methods](#396-other-methods)
-	- [3.10. Function](#310-function)
-	- [3.11. Set](#311-set)
-		- [3.11.1. Basic Set methods](#3111-basic-set-methods)
-		- [3.11.2. Set logic methods](#3112-set-logic-methods)
-	- [3.12. Map](#312-map)
-	- [3.13. Primitive and reference types](#313-primitive-and-reference-types)
-- [4. Loop](#4-loop)
-- [5. JS Time](#5-js-time)
-	- [5.1. Date, Timestamp, ISO 8601](#51-date-timestamp-iso-8601)
-	- [5.2. Basic Date methods](#52-basic-date-methods)
-	- [5.3. getTime(), getTimezoneOffset()](#53-gettime-gettimezoneoffset)
-	- [5.4. Convert Date object to string](#54-convert-date-object-to-string)
-- [8. DOM](#8-dom)
-	- [8.1. DOM Document](#81-dom-document)
-		- [8.1.1. Accessing elements:](#811-accessing-elements)
-		- [8.1.2.Changing content:](#812changing-content)
-		- [8.1.3. Changing attributes:](#813-changing-attributes)
-		- [8.1.4. Change styles:](#814-change-styles)
-		- [8.1.5. Adding and deleting elements:](#815-adding-and-deleting-elements)
-		- [8.1.6. Adding event handlers:](#816-adding-event-handlers)
-		- [8.1.7. Useful `document` properties:](#817-useful-document-properties)
-	- [8.2. DOM Validate](#82-dom-validate)
-		- [8.2.1. Form](#821-form)
-		- [8.2.2. Numeric input](#822-numeric-input)
-	- [8.3. DOM CSS](#83-dom-css)
-	- [8.4. DOM Animation](#84-dom-animation)
-	- [8.5. DOM Event](#85-dom-event)
-		- [8.5.1. Usage](#851-usage)
-		- [8.5.2. Common Event Types (using with addEventListener)](#852-common-event-types-using-with-addeventlistener)
-	- [8.6. DOM Navigation](#86-dom-navigation)
-	- [8.7. DOM Nodes](#87-dom-nodes)
-	- [8.8. Nodes](#88-nodes)
-	- [8.9. Collections](#89-collections)
-	- [8.10. Node Lists](#810-node-lists)
+- [JS cheat sheet](#js-cheat-sheet)
+	- [1. Hoisting](#1-hoisting)
+	- [2. Strict equality and loose equality operator](#2-strict-equality-and-loose-equality-operator)
+	- [3. Data Type in Javascript](#3-data-type-in-javascript)
+		- [3.1. String](#31-string)
+		- [3.2. Number](#32-number)
+		- [3.3. BigInt](#33-bigint)
+		- [3.4. Boolean](#34-boolean)
+		- [3.5. Undefined](#35-undefined)
+		- [3.6. Null (Empty)](#36-null-empty)
+		- [3.7. Symbol (Unique value)](#37-symbol-unique-value)
+		- [3.8. Object](#38-object)
+			- [3.8.1. Add, modify, delete new key-value](#381-add-modify-delete-new-key-value)
+			- [3.8.2. Traverse Object](#382-traverse-object)
+			- [3.8.3. Check property](#383-check-property)
+			- [3.8.4. Clone and merge object](#384-clone-and-merge-object)
+			- [3.8.5. Destructuring](#385-destructuring)
+			- [3.8.6. Method in object](#386-method-in-object)
+			- [3.8.7. Object vs Map vs Set](#387-object-vs-map-vs-set)
+		- [3.9. Array](#39-array)
+			- [3.9.1. Add / Remove elements](#391-add--remove-elements)
+			- [3.9.2. Traverse](#392-traverse)
+			- [3.9.3. Search](#393-search)
+			- [3.9.4. Array transformation](#394-array-transformation)
+			- [3.9.5. Sort and reverse](#395-sort-and-reverse)
+			- [3.9.6. Other methods](#396-other-methods)
+		- [3.10. Function](#310-function)
+		- [3.11. Set](#311-set)
+			- [3.11.1. Basic Set methods](#3111-basic-set-methods)
+			- [3.11.2. Set logic methods](#3112-set-logic-methods)
+		- [3.12. Map](#312-map)
+		- [3.13. Primitive and reference types](#313-primitive-and-reference-types)
+	- [4. Loop](#4-loop)
+	- [5. JS Time](#5-js-time)
+		- [5.1. Date, Timestamp, ISO 8601](#51-date-timestamp-iso-8601)
+		- [5.2. Basic Date methods](#52-basic-date-methods)
+		- [5.3. getTime(), getTimezoneOffset()](#53-gettime-gettimezoneoffset)
+		- [5.4. Convert Date object to string](#54-convert-date-object-to-string)
+	- [6. `...` syntax](#6--syntax)
+		- [6.1. Rest param### 6.2. Spread syntax](#61-rest-param-62-spread-syntax)
+		- [6.2. Spread syntax](#62-spread-syntax)
+		- [6.3. Summary](#63-summary)
+	- [8. DOM](#8-dom)
+		- [8.1. DOM Document](#81-dom-document)
+			- [8.1.1. Accessing elements:](#811-accessing-elements)
+			- [8.1.2.Changing content:](#812changing-content)
+			- [8.1.3. Changing attributes:](#813-changing-attributes)
+			- [8.1.4. Change styles:](#814-change-styles)
+			- [8.1.5. Adding and deleting elements:](#815-adding-and-deleting-elements)
+			- [8.1.6. Adding event handlers:](#816-adding-event-handlers)
+			- [8.1.7. Useful `document` properties:](#817-useful-document-properties)
+		- [8.2. DOM Validate](#82-dom-validate)
+			- [8.2.1. Form](#821-form)
+			- [8.2.2. Numeric input](#822-numeric-input)
+		- [8.3. DOM CSS](#83-dom-css)
+		- [8.4. DOM Animation](#84-dom-animation)
+		- [8.5. DOM Event](#85-dom-event)
+			- [8.5.1. Usage](#851-usage)
+			- [8.5.2. Common Event Types (using with addEventListener)](#852-common-event-types-using-with-addeventlistener)
+		- [8.6. DOM Navigation](#86-dom-navigation)
+		- [8.7. DOM Nodes](#87-dom-nodes)
+		- [8.8. Nodes](#88-nodes)
+		- [8.9. Collections](#89-collections)
+		- [8.10. Node Lists](#810-node-lists)
 
 
 ## 1. Hoisting
@@ -754,6 +759,61 @@ s.symmetricDifference();
 	console.log(new Date.toLocaleString(locales, options); // convert date to string according to region and options format
 ```
 **Reference**: <a href="https://www.w3schools.com/jsref/jsref_tolocalestring.asp">Locales and options</a>
+
+## 6. `...` syntax
+
+### 6.1. Rest param### 6.2. Spread syntax
+```js
+function func(a, b, ...rest) {
+  console.log(a);     // first argument
+  console.log(b);     // second argument
+  console.log(rest);  // the rest of argument of elements
+}
+
+
+func(1, 2, 3, 4, 5);
+// a = 1
+// b = 2
+// rest = [3, 4, 5]
+
+// sum
+
+function sum(...numbers) {
+  return numbers.reduce((total, n) => total + n, 0);
+}
+
+console.log(sum(1, 2, 3, 4)); // 10
+
+// separate array
+
+let [first, ...others] = [10, 20, 30, 40];
+console.log(first);  // 10
+console.log(others); // [20, 30, 40]
+
+// separate object
+
+let { name, ...info } = { name: "Quý", age: 21, city: "Hà Nội" };
+console.log(name); // "Quý"
+console.log(info); // { age: 21, city: "Hà Nội" }
+```
+### 6.2. Spread syntax
+
+```js
+// rest
+function printAll(...args) {
+  console.log(args);
+}
+printAll(1, 2, 3); // [1, 2, 3]
+
+// spread
+let nums = [1, 2, 3];
+printAll(...nums); // [1, 2, 3]
+```
+
+### 6.3. Summary
+
+* `...rest`: collect into array/obj.
+* `...spread`: spread into individual elements.
 
 ## 8. DOM
 - Is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document

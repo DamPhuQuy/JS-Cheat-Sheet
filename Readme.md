@@ -28,6 +28,9 @@
 			- [3.9.6. Other methods](#396-other-methods)
 		- [3.10. Function](#310-function)
 	- [4. Loop](#4-loop)
+	- [5. JS Time](#5-js-time)
+		- [5.1. Date, Timestamp, ISO 8601](#51-date-timestamp-iso-8601)
+		- [5.2. Date methods](#52-date-methods)
 	- [8. DOM](#8-dom)
 		- [8.1. DOM Document](#81-dom-document)
 			- [8.1.1. Accessing elements:](#811-accessing-elements)
@@ -543,6 +546,74 @@ Format: `key - value`
 		}
 	})(); 
 ```
+
+## 5. JS Time
+
+### 5.1. Date, Timestamp, ISO 8601
+```javascript
+	// Date
+	// Timestamp: UTC (ms)
+	// ISO 8601
+	
+	// Date and time expressed according to Timestamp
+	console.log(Date.parse("2024-01-01T10:00:00.200Z")); // 17041103200200 (ms)
+
+	// Date and time expressed according to ISO 8601
+	// Date in UTC: 2025-09-07 (YYYY-MM-DD)
+	// Time in UTC: 02:04:08.200Z (HH:MM:SS.MS) 
+	// Time in UTC+7: 02:04:08.200+07:00
+	// Date and time in UTC: 2025-09-07T02:04:08Z.200
+
+	// create a Date 
+	const time = new Date(date); // date (optional): a timestamp(ms) or a date time string
+
+	// Date static methods
+	const time = Date.now(); // return the current Date
+	const time = Date.parse("ISO_8601"); // use with standard ISO 8601
+	const time = Date.UTC(); 
+
+	// if date is invalid so the console.log will display Invalid Date or NaN
+	let date = new Date("10:10 20:10:2024"); 
+	console.log(date); // Invalid Date
+```
+
+### 5.2. Date methods 
+```javascript
+	// it is not necessary to remember all Date methods
+	// you just comprehend the concepts of time: FullYear, Month, Date, Day, Hours, Minutes, Seconds, Milliseconds. 
+	// The methods are getters and setters. 
+	// Work with UTC, just add UTC keyword on the methods
+	
+	const time = new Date(2012, 10, 20, 10, 20, 30, 50); // monthIndex in range [0, 11], dayIndex is range [0, 6] 
+
+	// Getters
+	console.log(date.getFullYear());
+	console.log(date.getMonth());
+	console.log(date.getDate());
+	console.log(date.getDay()); 
+	console.log(date.getHours()); 
+	console.log(date.getMinutes()); 
+	console.log(date.getSeconds()); 
+	console.log(date.getMilliseconds()); 
+
+	// Setters 
+	console.log(date.setFullYear()); 
+	console.log(date.setMonth()); 
+	console.log(date.setDate()); 
+	console.log(date.setHours()); 
+	console.log(date.setMinutes()); 
+	console.log(date.setSeconds()); 
+	console.log(date.setMilliseconds());
+	
+	// Work with UTC
+	console.log(date.getUTCFullYear()); 
+	console.log(date.setUTCFullYear()); 
+
+	// Example usage: concatenate date string
+	console.log(${date.getDate()}:${date.getMonth()}:${date.getFullYear()}); 
+
+```
+
 ## 8. DOM
 - Is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document
 - With the object model, JavaScript gets all the power it needs to create dynamic HTML:
